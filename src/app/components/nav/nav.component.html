@@ -1,0 +1,52 @@
+<div class="show-mobile">
+  <div>
+    <button (click)="toggleMenu()">
+      <img src="./assets/svg/icon_menu.svg" alt="menu"> 
+      
+    </button>
+    <a href="">
+      <!-- <img src="./assets/svg/logo_yard_sale.svg" alt="logo"> -->
+      <h1>BETTEL</h1>
+    </a>
+    <a href="">
+      <img src="./assets/svg/icon_shopping_cart.svg" alt="logo"> <!--aplication mobile-->
+    </a>
+  </div>
+  <div class="menu-text">
+      <h1 class="menu-ppal">Menú</h1>
+      <p class="menu-secundary">Delicious, fast, practical and fresh.</p>
+  </div>
+  
+  <div class="side-menu" [class.active]="activeMenu"> <!--aplication mobile-->
+    <button class="side-button" (click)="toggleMenu()">Elige una opción</button>
+    <ul>
+      <li><a routerLink="menu" (click)="toggleMenu()">MENU</a></li>
+      <li><a routerLink="historia" (click)="toggleMenu()">COMO LO HACEMOS</a></li>
+      <li><a routerLink="registrate" (click)="toggleMenu()">REGISTRATE</a></li>
+    </ul>
+  </div>
+</div>
+<div class="hide-mobile"> <!-- desktop --> 
+  <div>
+    <nav>
+      <a class="logo" href="">
+         <!-- <img src="./assets/svg/logo_yard_sale.svg" alt="logo">  -->
+         <h1>BETTEL</h1>
+      </a>
+      <ul class="format-nav-1">
+        <li><a routerLink="menu">MENU</a></li>
+        <li><a routerLink="historia">COMO LO HACEMOS</a></li>
+        <li><a routerLink="registrate">REGISTRATE</a></li>
+      </ul>
+    </nav>
+    <div class="info">
+      <div class="account">ecolonia@bettel.com</div>
+      <div class="cart"> <!-- Aplication desktop-->
+        <a href="">
+        <img src="./assets/svg/icon_shopping_cart.svg" alt="logo">
+        </a>
+        <span class="counter">{{ counter }}</span>
+      </div>
+    </div>
+  </div>
+</div>

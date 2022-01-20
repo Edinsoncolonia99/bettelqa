@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Product } from './models/product.model'
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'bettel';
+  imgParent = '';
+  showImg = true;
+  
+
+
+  /* evento para renderizar en el componente P*/
+  onLoaded(img: string){
+    console.log('componente P', img)
+  }
+  toogleImg(){
+    this.showImg = !this.showImg;
+  }
 }

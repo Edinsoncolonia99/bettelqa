@@ -1,0 +1,40 @@
+p, h2 {
+    margin: 0;
+  }
+
+  .format-card{
+    display: flex;
+    font-weight: bolder;
+    grid-template-columns: 2fr minmax(120px, 1fr);
+  }
+
+  .format-card-title {
+    font-weight: bolder;
+    margin-top: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .format-card-subtitle{
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+
+  .format-card-price { 
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  .format-card-button {
+    display: flex;
+    flex-direction: row;
+    margin-left: 50%;
+    transform: translateX(-47%);
+    border-radius: 5px;
+    background-color: white;
+    border-style: solid;
+    font-weight: 900;
+    padding: 15px 60px 15px 60px;
+    border-color: black;
+    
+  }
