@@ -4,7 +4,7 @@
       <img src="./assets/svg/icon_menu.svg" alt="menu"> 
       
     </button>
-    <a href="">
+    <a routerLink="menu">
       <!-- <img src="./assets/svg/logo_yard_sale.svg" alt="logo"> -->
       <h1>BETTEL</h1>
     </a>
@@ -18,7 +18,7 @@
   </div>
   
   <div class="side-menu" [class.active]="activeMenu"> <!--aplication mobile-->
-    <button class="side-button" (click)="toggleMenu()">Elige una opción</button>
+    <button class="side-button" (click)="toggleMenu()">Cerrar</button>
     <ul>
       <li><a routerLink="menu" (click)="toggleMenu()">MENU</a></li>
       <li><a routerLink="historia" (click)="toggleMenu()">COMO LO HACEMOS</a></li>
@@ -29,7 +29,7 @@
 <div class="hide-mobile"> <!-- desktop --> 
   <div>
     <nav>
-      <a class="logo" href="">
+      <a class="logo" routerLink="menu">
          <!-- <img src="./assets/svg/logo_yard_sale.svg" alt="logo">  -->
          <h1>BETTEL</h1>
       </a>

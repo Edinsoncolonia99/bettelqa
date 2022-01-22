@@ -10,12 +10,12 @@ import { StoreService } from './../../services/store.service'
   templateUrl: './product-detail.component.html',
   styleUrls: ['./product-detail.component.scss']
 })
-export class ProductDetailComponent implements OnInit {
+export class ProductDetailComponent implements OnInit{
 
-  productId: string | null = null;
+    productId: string | null = null;
   product: Product | null = null;
 
-  constructor(
+    constructor(
     private route: ActivatedRoute,
     private storeService: StoreService
 
@@ -36,5 +36,7 @@ export class ProductDetailComponent implements OnInit {
     //  this.product = data;
     //});
   }
+
+  
 
 }
