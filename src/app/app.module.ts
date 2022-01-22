@@ -9,8 +9,9 @@ import { ProductComponent } from './components/product/product.component';
 import { ProductsComponent } from './components/products/products.component';
 import { NavComponent } from './components/nav/nav.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { HistoryComponent } from './components/history/history.component';
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
+import { ContactanosComponent } from './components/contactanos/contactanos.component';
+import { UbicacionesComponent } from './components/ubicaciones/ubicaciones.component';
 
 @NgModule({
   declarations: [
@@ -20,8 +21,9 @@ import { ProductDetailComponent } from './components/product-detail/product-deta
     ProductsComponent,
     NavComponent,
     FooterComponent,
-    HistoryComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    ContactanosComponent,
+    UbicacionesComponent
   ],
   imports: [
     BrowserModule,
