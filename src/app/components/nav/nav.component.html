@@ -1,31 +1,42 @@
-<div class="show-mobile">
+<div class="show-mobile"> <!-- Frontal-->
   <div>
+
     <button (click)="toggleMenu()">
       <img src="./assets/svg/icon_menu.svg" alt="menu"> 
-      
     </button>
     <a routerLink="menu">
       <!-- <img src="./assets/svg/logo_yard_sale.svg" alt="logo"> -->
       <h1>BETTEL</h1>
     </a>
-    <a href="">
+
+  <a class="shopping-1" href="">
       <img src="./assets/svg/icon_shopping_cart.svg" alt="logo"> <!--aplication mobile-->
     </a>
   </div>
-  <div class="menu-text">
+  
+  <div class="menu-text"> <!-- text home-->
       <h1 class="menu-ppal">Menú</h1>
       <p class="menu-secundary">Delicious, fast, practical and fresh.</p>
   </div>
-  
-  <div class="side-menu" [class.active]="activeMenu"> <!--aplication mobile-->
-    <button class="side-button" (click)="toggleMenu()">Cerrar</button>
+<!--hasta aqui frontal-->  
+
+  <div class="side-menu" [class.active]="activeMenu"> <!--se activa el side menu-->
+    <section class="side-menu-cabecera" href="">
+      <img class="side-menu-x"  src="./assets/svg/x.png" (click)="toggleMenu()" alt="logo">
+      <button class="side-button" (click)="toggleMenu()">BETTEL</button>
+      <img src="./assets/svg/icon_shopping_cart.svg" alt="logo">
+    </section>
+    
     <ul>
-      <li><a routerLink="menu" (click)="toggleMenu()">MENU</a></li>
-      <li><a routerLink="ubicaciones" (click)="toggleMenu()">UBICACIONES</a></li>
-      <li><a routerLink="contactanos" (click)="toggleMenu()">CONTACTANOS POR WHATSAPP</a></li>
+      <li class="side-menu-text"><a routerLink="menu" (click)="toggleMenu()">MENU</a></li>
+      <li class="side-menu-text"><a routerLink="ubicaciones" (click)="toggleMenu()">UBICACIONES</a></li>
+      <li class="side-menu-text"><a routerLink="contactanos" (click)="toggleMenu()">CONTACTO WHATSAPP</a></li>
     </ul>
   </div>
 </div>
+
+
+
 <div class="hide-mobile"> <!-- desktop --> 
   <div>
     <nav>
@@ -36,13 +47,13 @@
       <ul class="format-nav-1">
         <li><a routerLink="menu">MENU</a></li>
         <li><a routerLink="ubicaciones">UBICACIONES</a></li>
-        <li><a routerLink="contactanos">CONTACTANOS POR WHATSAPP</a></li>
+        <li><a routerLink="contactanos">CONTACTO WHATSAPP</a></li>
       </ul>
     </nav>
     <div class="info">
       <div class="account">ecolonia@bettel.com</div>
       <div class="cart"> <!-- Aplication desktop-->
-        <a href="">
+         <a href="">
         <img src="./assets/svg/icon_shopping_cart.svg" alt="logo">
         </a>
         <span class="counter">{{ counter }}</span>

@@ -1,7 +1,7 @@
 .show-mobile {
   display: block;
   box-shadow: 0px 2px 5px rgb(black, .2);
-  > div {
+  > div { // Home Front
     padding: 1em;
     display: flex;
     justify-content: space-between;
@@ -12,6 +12,28 @@
       right: 10px;
     }
   }
+  
+
+  .side-menu-cabecera {
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .side-menu-x {
+    margin-right: 20px;
+    width: 20px;
+  }
+  .side-menu-text{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 12px 20px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  
   .side-button {
     padding: 15px 60px 15px 60px;
     border-color: black;
@@ -38,32 +60,33 @@
     }
   }
 }
+
 .side-menu a{
   text-decoration: none;
   right: 10px;
   color: black;
   line-height: 20px;
-}
+  }
 .menu-text { // Central Menu
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-}
+  }
 
 .menu-ppal { // Central Menu
   color: black;
   font-size: 1.5rem;
   font-weight: bolder;
   margin-bottom: 10px;
-}
+  }
 
 .menu-secundary { // sub-menu Delicious.
   color: green;
   font-size: 1rem;
   margin-bottom: 24px;
   align-items: center;
-}
+  }
 
 .hide-mobile { // Desktop
   display: none;
@@ -74,10 +97,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+    }
   .logo { //l Bettel logo
     margin-right: 1em;
-  }
+    }
   nav {
     display: flex;
     align-items: center;
@@ -91,6 +114,7 @@
       }
     }
   }
+  
   .info {
     display: flex;
     align-items: center;
