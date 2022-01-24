@@ -1,2 +1,13 @@
-<p>Aqui va el detalle del producto!</p>
-
+<div class="container-detail">
+    <h1 class="format-card-title">{{ product.title }}</h1>
+    <img [src]="product.image" alt="">
+    
+    <div class="format-price-name">
+        <p class="format-card-price">{{ product.price | currency }}</p>
+        <button class="format-card-button">AGREGAR</button>        
+    </div>
+    
+    <header class="format-card"> 
+      <p class="format-card-subtitle">{{ product.name }}</p>
+    </header>
+<div>

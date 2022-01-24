@@ -1,0 +1,64 @@
+img {
+    max-width: 100%;
+  }
+
+  .container-detail {
+      display: block;
+      padding: 1rem;
+  }
+
+  .format-price-name {
+      display: flex;
+      justify-content: center;
+      
+      margin: 0;
+      grid-template-columns: 2fr minmax(120px, 1fr);
+  }
+
+  .format-card{
+    display: flex;
+    font-weight: bolder;
+    justify-content: center;
+    grid-template-columns: 2fr minmax(120px, 1fr);
+  }
+
+  .format-card-title {
+    display: flex;
+    font-weight: bolder;
+    margin-top: 10px;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+
+
+  .format-card-subtitle{
+    font-size: 16px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+  }
+
+  .format-card-price { 
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bolder;
+  }
+
+  .format-card-button {
+    display: flex;
+    flex-direction: row;
+    margin-left: 60px;
+    border-radius: 5px;
+    background-color: white;
+    border-style: solid;
+    font-weight: 900;
+    padding: 10px 40px 10px 40px;
+    border-color: black; 
+  }
+
+
+  
+
+
