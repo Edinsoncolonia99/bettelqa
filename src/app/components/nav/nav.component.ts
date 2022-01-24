@@ -25,4 +25,8 @@ export class NavComponent implements OnInit {
     this.activeMenu = !this.activeMenu;
   }
 
+  contactoWhatsapp() {
+    
+  }
+
 }

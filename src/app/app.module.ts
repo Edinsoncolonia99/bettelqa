@@ -11,6 +11,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 import { ContactanosComponent } from './components/contactanos/contactanos.component';
 import { UbicacionesComponent } from './components/ubicaciones/ubicaciones.component';
+import { NgxWhastappButtonModule } from "ngx-whatsapp-button";
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { UbicacionesComponent } from './components/ubicaciones/ubicaciones.compo
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    NgxWhastappButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
