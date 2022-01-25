@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ContactanosComponent implements OnInit {
 
   constructor() { }
-  public phone = '{ +3117976636 }';
+  public phone = '{ 573117976636 }';
   public title = '{ ¡Ahora el pan se llama BETTEL! }';
 
   ngOnInit(): void {

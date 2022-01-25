@@ -7,8 +7,6 @@ import { Product } from '../models/product.model';
 })
 export class StoreService {
 
-  // prueba de array
-
   products: Product[] = [
     {
       id: '1',

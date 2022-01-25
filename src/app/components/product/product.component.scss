@@ -2,40 +2,48 @@ p, h2 {
     margin: 0;
   }
 
-  .format-card{
-    display: flex;
-    font-weight: bolder;
-    grid-template-columns: 2fr minmax(120px, 1fr);
-  }
-
-  .format-card-title {
-    font-weight: bolder;
-    margin-top: 10px;
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-
-  .format-card-subtitle{
-    font-size: 12px;
-    margin-bottom: 40px;
-  }
-
-  .format-card-price { 
-    display: flex;
-    align-items: flex-start;
-    margin-top: 10px;
-    font-size: 18px;
+  .format-card-ppal {
+    display: grid;
+    grid-template-columns: 95px 95px;
+    grid-template-rows: 50px 40px 60px;
+    place-content: center;
+    grid-template-areas: 
+        "header header"
+        "main0 main1"
+        "main2 main2"
   }
 
   .format-card-button {
-    display: flex;
-    flex-direction: row;
-    margin-left: 60px;
-    border-radius: 10px;
+    grid-area: header;
+    place-content: center;
+    height: 40px;
+    border-radius: 7px;
     background-color: white;
     border-style: solid;
     font-weight: 900;
-    padding: 10px 40px 10px 40px;
     border-color: black;
+  }
+
+  .format-card-title {
+    grid-area: main0;
+    font-weight: bolder;
+    align-items: center;
+  }
+
+  .format-card-price { 
+    grid-area: main1;
+    font-weight: bolder;
+    font-size: 18px;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .format-card-subtitle{
+    grid-area: main2;
+    font-size: 14px;
+    align-items: center;
     
   }
+
+
+  

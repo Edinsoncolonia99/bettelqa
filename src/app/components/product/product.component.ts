@@ -16,7 +16,7 @@ export class ProductComponent implements OnInit {
     title: '',
   }
   @Output() addedProduct = new EventEmitter<Product>();
-  @Output() showProduct = new EventEmitter<string>();
+  //@Output() showProduct = new EventEmitter<string>();
 
   constructor() { }
 
@@ -28,7 +28,7 @@ export class ProductComponent implements OnInit {
     this.addedProduct.emit(this.product);
   }
 
-  onShowDetail() {
-    this.showProduct.emit(this.product.id);
-  }
+  //onShowDetail() {
+  //  this.showProduct.emit(this.product.id);
+ // }
 }

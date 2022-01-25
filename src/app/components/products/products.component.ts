@@ -13,7 +13,7 @@ export class ProductsComponent implements OnInit {
 
   myShoppingCart: Product[] = [];
   total = 0;
-  showProductDetail = false;
+  //showProductDetail = false;
   productChosen: Product= {
     id: '',
     name: '',
@@ -66,14 +66,15 @@ export class ProductsComponent implements OnInit {
     this.total = this.storeService.getTotal();
   }
 
-  toggleProductDetail(){
-    this.showProductDetail = !this.showProductDetail 
-  }
+  // Forma antigua de enseñar el detalle del producto
+  //toggleProductDetail(){
+  //  this.showProductDetail = !this.showProductDetail 
+  //}
 
-  onShowDetail(product: Product) {
+  //onShowDetail(product: Product) {
     
-    this.storeService.Prueba(product);
-    this.total = this.storeService.getTotal();
+  //  this.storeService.Prueba(product);
+  //  this.total = this.storeService.getTotal();
     
-  }
+  //}
 }
