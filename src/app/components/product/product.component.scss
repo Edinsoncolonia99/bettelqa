@@ -4,7 +4,7 @@ p, h2 {
 
   .format-card-ppal {
     display: grid;
-    grid-template-columns: 130px 130px;
+    grid-template-columns: 120px 130px;
     grid-template-rows: 50px 40px 60px;
     place-content: center;
     grid-template-areas: 
@@ -16,12 +16,15 @@ p, h2 {
   .format-card-button {
     grid-area: header;
     place-content: center;
+    transform: translate(30%, 0%);
     height: 40px;
+    width: 140px;
     border-radius: 7px;
     background-color: white;
     border-style: solid;
     font-weight: 900;
     border-color: black;
+    
   }
 
   .format-card-title {
