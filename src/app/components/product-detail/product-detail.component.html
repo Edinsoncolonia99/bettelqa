@@ -7,14 +7,39 @@
     <div class="format-price-name">
         <p class="format-card-price">{{ product.price | currency }}</p>
         <!-- <button class="format-card-button">AGREGAR</button>        -->
-        <button class="format-card-button" (click)="onAddToCart()">AGREGAR</button>
+        <button class="format-card-button" (click)="togglePreorden()">AGREGAR</button>
     </div>
     
     <header class="format-card"> 
-      <h2 class="format-card-subtitle">{{ product.name }}</h2>
-      
+      <h2 class="format-card-subtitle">{{ product.name }}</h2>   
     </header>
     <button class="format-back" (click)="back()">Volver</button>
+    
+    
+    
+    
+    
+    <div class="show-mobile" [class.active]="activePreorden">
+        <div class="side-menu" [class.active]="activePreorden">
+            <button class="side-button" (click)="togglePreorden()">Terminar</button>
+            <ul>
+                <li>pack x 1</li>
+                <li>pack x 2</li>
+                <li>pack x 3</li>
+            </ul>
+
+            <ul>
+                <li>precio 1</li>
+                <li>precio 2</li>
+                <li>precio 3</li>
+            </ul>
+            <div>
+                <button>Seguir comprando</button>
+                <button>Ir a pagar</button>
+            </div>
+            <p>Ste paso: estilizar, aplicar cerrar y continuar, ajustar grilla, boton check en cada uno  </p>
+        </div>
+    </div>
     
     
 

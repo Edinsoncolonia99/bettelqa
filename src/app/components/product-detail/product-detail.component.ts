@@ -13,6 +13,8 @@ import { Location } from '@angular/common';
   styleUrls: ['./product-detail.component.scss']
 })
 export class ProductDetailComponent implements OnInit {
+
+  activePreorden = false;
   total = 0;    
   counter = 0;
   @Output() addedProduct = new EventEmitter<Product>();
@@ -41,13 +43,16 @@ export class ProductDetailComponent implements OnInit {
   onAddToCart() {
     this.addedProduct.emit(this.product);
   }
-  
+
   onAddToShoppingCart(product: Product) {
     this.storeService.addProduct(product);
     this.total = this.storeService.getTotal();
   }
 
-
+  togglePreorden() {
+    this.activePreorden = !this.activePreorden;
+  }
+  
   back() {
     this.location.back();
   }
