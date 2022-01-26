@@ -1,8 +1,9 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { switchMap } from 'rxjs/operators';
-import { Product } from '../../models/product.model'
-import { StoreService } from './../../services/store.service'
+import { Product } from '../../models/product.model';
+import { StoreService } from './../../services/store.service';
+import { Location } from '@angular/common';
 
 
 
@@ -15,13 +16,14 @@ export class ProductDetailComponent implements OnInit {
   total = 0;    
   counter = 0;
   @Output() addedProduct = new EventEmitter<Product>();
-
   @Input() product!: Product;
+
   productId: string | null = null;
   
     constructor(
     private route: ActivatedRoute,
-    private storeService: StoreService
+    private storeService: StoreService,
+    private location: Location
   ) { }
 
   ngOnInit(): void {
@@ -39,12 +41,14 @@ export class ProductDetailComponent implements OnInit {
   onAddToCart() {
     this.addedProduct.emit(this.product);
   }
-
+  
   onAddToShoppingCart(product: Product) {
     this.storeService.addProduct(product);
     this.total = this.storeService.getTotal();
   }
 
-  
 
+  back() {
+    this.location.back();
+  }
 }

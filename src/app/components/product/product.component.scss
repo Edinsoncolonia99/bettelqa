@@ -15,16 +15,14 @@ p, h2 {
 
   .format-card-button {
     grid-area: header;
-    place-content: center;
-    transform: translate(30%, 0%);
-    height: 40px;
-    width: 140px;
+    justify-content: center;
+    height: 80%;
+    width: 100%;
     border-radius: 7px;
     background-color: white;
     border-style: solid;
     font-weight: 900;
     border-color: black;
-    
   }
 
   .format-card-title {
