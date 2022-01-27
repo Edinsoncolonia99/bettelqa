@@ -75,10 +75,11 @@ img {
   .show-mobile {
     display: block;
     box-shadow: 0px 2px 5px rgb(black, .2);
+  
   }
   .side-menu { // Lateral Menu
     position: fixed;
-    top: 0;
+    top: 90px;
     left: 0;
     bottom: 0;
     right: 0;
