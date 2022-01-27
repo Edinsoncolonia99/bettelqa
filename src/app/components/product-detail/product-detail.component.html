@@ -17,27 +17,25 @@
     
     
     
-    
-    
+
+    <!-- Show Menu-->
     <div class="show-mobile" [class.active]="activePreorden">
         <div class="side-menu" [class.active]="activePreorden">
             <button class="side-button" (click)="togglePreorden()">Terminar</button>
-            <ul>
-                <li>pack x 1</li>
-                <li>pack x 2</li>
-                <li>pack x 3</li>
-            </ul>
-
-            <ul>
-                <li>precio 1</li>
-                <li>precio 2</li>
-                <li>precio 3</li>
-            </ul>
-            <div>
-                <button>Seguir comprando</button>
-                <button>Ir a pagar</button>
+            <section class="side-menu-preorden">
+                <p class="format-title">Elige tu presentación:</p>
+                    
+                        <h1  class="format-pack1">Paquete x 4</h1>
+                        <h1  class="format-pack2">Paquete x 6</h1>
+                        <h1  class="format-pack3">Paquete x 10</h1>
+                        <h1  class="format-precio4">$12.900</h1>
+                        <h1  class="format-precio5">$16.500</h1>
+                        <h1  class="format-precio6">$21.600</h1>
+            </section>
+            <div class="format-opcion">
+                <button class="format-card-button1">Seguir comprando</button>
+                <button class="format-card-button2">Ir a pagar</button>
             </div>
-            <p>Ste paso: estilizar, aplicar cerrar y continuar, ajustar grilla, boton check en cada uno  </p>
         </div>
     </div>
     

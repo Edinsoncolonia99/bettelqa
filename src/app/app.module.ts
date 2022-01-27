@@ -13,6 +13,7 @@ import { ContactanosComponent } from './components/contactanos/contactanos.compo
 import { UbicacionesComponent } from './components/ubicaciones/ubicaciones.component';
 import { NgxWhastappButtonModule } from "ngx-whatsapp-button";
 import { PreordenComponent } from './components/preorden/preorden.component';
+import { CheckoutComponent } from './components/checkout/checkout.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { PreordenComponent } from './components/preorden/preorden.component';
     ProductDetailComponent,
     ContactanosComponent,
     UbicacionesComponent,
-    PreordenComponent
+    PreordenComponent,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,

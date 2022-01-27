@@ -3,7 +3,7 @@ img {
   }
 
   .container-detail {
-      display: block;
+      display: grid-template-columns;
       padding: 1rem;
   }
 
@@ -93,4 +93,96 @@ img {
     &.active {
       transform: translateX(0);
     }
+  }
+
+  .side-menu-preorden {
+    display: grid;
+    grid-template-columns: 120px 130px;
+    grid-template-rows: 80px 40px 40px 40px;
+    place-content: center;
+    grid-template-areas: 
+        "header header"
+        "main1 main4"
+        "main2 main5"
+        "main3 main6"
+  }
+
+  .format-title {
+    grid-area: header;
+    font-size: 1.5rem;
+    color: green;
+    padding-top: 10px;
+    font-weight: bolder;
+    align-items: center;
+  }
+
+  .format-pack1 {
+    grid-area: main1;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    align-items: center;
+  }
+
+  .format-pack2 {
+    grid-area: main2;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    align-items: center;
+  }
+
+  .format-pack3 {
+    grid-area: main3;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    align-items: center;
+  }
+
+  .format-precio4 {
+    grid-area: main4;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    align-items: center;
+  }
+
+  .format-precio5 {
+    grid-area: main5;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    align-items: center;
+  }
+
+  .format-precio6 {
+    grid-area: main6;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    align-items: center;
+  }
+
+  .format-opcion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .format-card-button1 {
+    grid: column;
+    margin-left: 10px;
+    justify-content: space-between;
+    border-radius: 5px;
+    background-color: white;
+    border-style: solid;
+    font-weight: 900;
+    
+    border-color: black; 
+  }
+
+  .format-card-button2 {
+    grid-direction: column;
+    margin-left: 10px;
+    justify-content: space-between;
+    border-radius: 5px;
+    background-color: white;
+    border-style: solid;
+    font-weight: 900;
+    padding: 10px 20px 10px 20px;
+    border-color: black; 
   }
