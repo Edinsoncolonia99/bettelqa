@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Bettel
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7.
@@ -30,3 +31,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 # bettel
 La tienda online de pan y reposteria
 >>>>>>> 1ac4a8ee5d6823e3af90ed7db4207d8ce1b76ea9
+=======
+# bettelqa
+>>>>>>> 576a3ea4508ddb6588e51d11a6e310f87ceb495a
