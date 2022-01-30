@@ -21,25 +21,32 @@
     <!-- Show Menu-->
     <div class="show-mobile" [class.active]="activePreorden">
         <div class="side-menu" [class.active]="activePreorden">
-            <button class="side-button" (click)="togglePreorden()">Terminar</button>
+            <button class="side-button" (click)="togglePreorden()">Resumen del pedido</button>
             <section class="side-menu-preorden">
-                <p class="format-title">Elige tu presentación:</p>
-                    
-                        <h1  class="format-pack1">Paquete x 4</h1>
-                        <h1  class="format-pack2">Paquete x 6</h1>
-                        <h1  class="format-pack3">Paquete x 10</h1>
+                <p class="format-title">Cuál presentación deseas añadir a tu carrito</p>
+                        <h1  class="format-pack1">Caja de 4 ud</h1>
+                        <h1  class="format-pack2">Caja de 6 ud</h1>
+                        <h1  class="format-pack3">Caja de 10 ud</h1>
                         <h1  class="format-precio4">$12.900</h1>
                         <h1  class="format-precio5">$16.500</h1>
                         <h1  class="format-precio6">$21.600</h1>
+                        <button class="format-button add-to-cart">
+                            <img src="./../../../assets/svg/bt_add_to_cart.svg" alt="adicionar">
+                        </button>
+                        <button class="format-button add-to-cart">
+                            <img src="./../../../assets/svg/bt_add_to_cart.svg" alt="adicionar">
+                        </button>   
+                        <button class="format-button add-to-cart">
+                            <img src="./../../../assets/svg/bt_add_to_cart.svg" alt="adicionar">
+                        </button>
             </section>
             <div class="format-opcion">
-                <button class="format-card-button1">Seguir comprando</button>
-                <button class="format-card-button2">Ir a pagar</button>
+                <button routerLink="/menu" class="format-card-button1">Seguir comprando</button>
+                <button routerLink="/checkout" class="format-card-button2">Ir a pagar</button>
             </div>
         </div>
     </div>
-    
-    
+         
 
 
     

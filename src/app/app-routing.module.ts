@@ -4,6 +4,7 @@ import { ProductsComponent } from './components/products/products.component';
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 import { ContactanosComponent } from './components/contactanos/contactanos.component';
 import { UbicacionesComponent } from './components/ubicaciones/ubicaciones.component';
+import {  CheckoutComponent } from './components/checkout/checkout.component';
 
 const routes: Routes = [
   {
@@ -18,6 +19,10 @@ const routes: Routes = [
   {
     path: 'contactanos',
     component: ContactanosComponent
+  },
+  {
+    path: 'checkout',
+    component: CheckoutComponent
   },
   {
     path: 'ubicaciones',

@@ -98,19 +98,22 @@ img {
 
   .side-menu-preorden {
     display: grid;
-    grid-template-columns: 120px 130px;
-    grid-template-rows: 80px 40px 40px 40px;
+    grid-template-columns: 125px 100px 80px;
+    grid-template-rows: 80px 80px 80px 80px;
     place-content: center;
+    height: 370px;
+    width: 343px;
     grid-template-areas: 
-        "header header"
-        "main1 main4"
-        "main2 main5"
-        "main3 main6"
+        "header header header"
+        "main1 main4 buttom1"
+        "main2 main5 buttom2"
+        "main3 main6 buttom3"
+    
   }
 
   .format-title {
     grid-area: header;
-    font-size: 1.5rem;
+    font-size: 18px;
     color: green;
     padding-top: 10px;
     font-weight: bolder;
@@ -122,13 +125,15 @@ img {
     font-size: 1.2rem;
     font-weight: bolder;
     align-items: center;
+    align-self: center;
   }
-
+  
   .format-pack2 {
     grid-area: main2;
     font-size: 1.2rem;
     font-weight: bolder;
     align-items: center;
+    align-self: center;
   }
 
   .format-pack3 {
@@ -136,6 +141,7 @@ img {
     font-size: 1.2rem;
     font-weight: bolder;
     align-items: center;
+    align-self: center;
   }
 
   .format-precio4 {
@@ -143,6 +149,8 @@ img {
     font-size: 1.2rem;
     font-weight: bolder;
     align-items: center;
+    justify-self: center;
+    align-self: center;
   }
 
   .format-precio5 {
@@ -150,6 +158,8 @@ img {
     font-size: 1.2rem;
     font-weight: bolder;
     align-items: center;
+    justify-self: center;
+    align-self: center;
   }
 
   .format-precio6 {
@@ -157,11 +167,8 @@ img {
     font-size: 1.2rem;
     font-weight: bolder;
     align-items: center;
-  }
-
-  .format-opcion {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    justify-self: center;
+    align-self: center;
   }
 
   .format-card-button1 {
@@ -172,18 +179,38 @@ img {
     background-color: white;
     border-style: solid;
     font-weight: 900;
-    
+    padding: 10px 20px 10px 20px;
     border-color: black; 
   }
 
   .format-card-button2 {
-    grid-direction: column;
+    grid: column;
     margin-left: 10px;
     justify-content: space-between;
     border-radius: 5px;
     background-color: white;
     border-style: solid;
     font-weight: 900;
-    padding: 10px 20px 10px 20px;
+    padding: 10px 40px 10px 40px;
     border-color: black; 
   }
+
+  .format-button {
+    background-color: #ACD9B2;
+    border-radius: 5px;
+    color: var((white));
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+    font-weight: bold;
+    height: 50px;
+    border-color: #ACD9B2;
+  }
+
+  .add-to-cart {
+    display: flex;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+  }
+
