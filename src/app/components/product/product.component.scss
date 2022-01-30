@@ -5,7 +5,7 @@ p, h2 {
   .format-card-ppal {
     display: grid;
     grid-template-columns: 120px 130px;
-    grid-template-rows: 50px 40px 60px;
+    grid-template-rows: 40px 60px 60px;
     place-content: center;
     grid-template-areas: 
         "header header"
@@ -27,6 +27,7 @@ p, h2 {
 
   .format-card-title {
     grid-area: main0;
+    font-size: 18px;
     font-weight: bolder;
     align-items: center;
   }
@@ -34,16 +35,18 @@ p, h2 {
   .format-card-price { 
     grid-area: main1;
     font-weight: bolder;
-    height: 100vh;
     font-size: 18px;
-    align-content: end;
-    justify-content: end;
+    align-items: center;
+    justify-self: end;
+    align-self: center;
+    
   }
 
   .format-card-subtitle{
     grid-area: main2;
     font-size: 14px;
     align-items: center;
+    align-self: center;
     
   }
 

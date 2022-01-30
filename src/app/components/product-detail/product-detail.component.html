@@ -2,7 +2,7 @@
 
 <div class="container-detail">
     <h1 class="format-card-title">{{ product.title }}</h1>
-    <img [src]="product.image" alt="">
+    <img [src]="product.image" alt="" (click)="togglePreorden()">
     
     <div class="format-price-name">
         <p class="format-card-price">{{ product.price | currency }}</p>
@@ -21,7 +21,7 @@
     <!-- Show Menu-->
     <div class="show-mobile" [class.active]="activePreorden">
         <div class="side-menu" [class.active]="activePreorden">
-            <button class="side-button" (click)="togglePreorden()">Resumen del pedido</button>
+            <button class="side-button" (click)="togglePreorden()">Detalle del pedido</button>
             <section class="side-menu-preorden">
                 <p class="format-title">Cuál presentación deseas añadir a tu carrito</p>
                         <h1  class="format-pack1">Caja de 4 ud</h1>

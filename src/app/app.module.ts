@@ -14,6 +14,8 @@ import { UbicacionesComponent } from './components/ubicaciones/ubicaciones.compo
 import { NgxWhastappButtonModule } from "ngx-whatsapp-button";
 import { PreordenComponent } from './components/preorden/preorden.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -33,7 +35,8 @@ import { CheckoutComponent } from './components/checkout/checkout.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    NgxWhastappButtonModule
+    NgxWhastappButtonModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
