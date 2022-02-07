@@ -12,7 +12,7 @@
 .title-ppal {
     grid-area: main;
     align-self: center;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bolder;
 }
 
@@ -24,6 +24,8 @@
     align-self: top;
     justify-self: center;
     border-radius: 5px;
+    border: 1px solid black;
+    background-color: white;
 }
 
 .text-find {
@@ -47,7 +49,7 @@
 .item0{
     grid-area: main;
     align-self: center;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bolder;
 }
 
@@ -120,7 +122,7 @@
 .total1 {
     grid-area: total;
     align-self: center;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bolder;
 }
 
@@ -148,85 +150,33 @@
     font-size: 14px;
 }
 
-.entrega {
-    display: grid;
-    place-content: center;
-    height: 35%;
-    grid-template-columns: 100px 130px;
-    grid-auto-rows: 30px;
-    grid-template-areas: 
-    "datos datos"
-    "label1 dato1"
-    "label2 dato2"
-    "label3 dato3"
-    "label4 dato4";
-}
 
-.datos-entrega {
-    grid-area: datos;
-    align-self: center;
+.send {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
     font-size: 16px;
     font-weight: bolder;
+    margin-top: 20px;
 }
 
-.label1 {
-    grid-area: label1;
-    align-self: center;
-    font-size: 14px;
-}
-
-.input1 {
-    grid-area: dato1;
-    align-self: center;
-    font-size: 14px;
-}
-
-.label2 {
-    grid-area: label2;
-    align-self: center;
-    font-size: 14px;
-}
-
-.input2 {
-    grid-area: dato2;
-    align-self: center;
-    font-size: 14px;
-}
-
-.label3 {
-    grid-area: label3;
-    align-self: center;
-    font-size: 14px;
-}
-
-.input3 {
-    grid-area: dato3;
-    align-self: center;
-    font-size: 14px;
-}
-
-.label4 {
-    grid-area: label4;
-    align-self: center;
-    font-size: 14px;
-}
-
-.input4 {
-    grid-area: dato4;
-    align-self: center;
-    font-size: 14px;
-}
 
 .recomendation {
     display: grid;
     place-content: center;
-    height: 35%;
+    height: 50%;
+    gap: 10px;
     grid-template-columns: 230px;
-    grid-auto-rows: 60px;
+    grid-auto-rows: 40px;
     grid-template-areas: 
     "rec1"
     "rec2"
-    "rec3";
+    "rec3"
+    "rec4";
 }
 
 .r-pay {
@@ -240,10 +190,15 @@
     align-self: center;
     font-size: 14px;
     font-weight: bolder;
+    align-self: start;
 }
 
 .text-area {
     grid-area: rec3;
-    align-self: center;
     font-size: 14px;
+    width: 100%;
+    height: 120%;
+    
+    
 }
+

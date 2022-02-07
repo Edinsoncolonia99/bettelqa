@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CheckoutComponent implements OnInit {
 
+  register = {
+    nombre: '',
+    apellido: '',
+    contacto: '',
+    email: '',
+  }
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  onRegister(){
+    console.log(this.register);
+  }
 }

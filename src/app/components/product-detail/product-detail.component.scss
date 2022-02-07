@@ -30,8 +30,6 @@ img {
     margin-bottom: 10px;
   }
 
-
-
   .format-card-subtitle{
     font-size: 16px;
     margin-bottom: 20px;
@@ -107,8 +105,7 @@ img {
         "header header header"
         "main1 main4 buttom1"
         "main2 main5 buttom2"
-        "main3 main6 buttom3"
-    
+        "main3 main6 buttom3";
   }
 
   .format-title {
@@ -171,26 +168,26 @@ img {
     align-self: center;
   }
 
+  .format-opcion {
+    display: flex;
+  }
+
   .format-card-button1 {
-    grid: column;
     margin-left: 10px;
     justify-content: space-between;
     border-radius: 5px;
     background-color: white;
-    border-style: solid;
-    font-weight: 900;
+    border: 2px solid black;
     padding: 10px 20px 10px 20px;
     border-color: black; 
   }
 
   .format-card-button2 {
-    grid: column;
     margin-left: 10px;
     justify-content: space-between;
     border-radius: 5px;
     background-color: white;
-    border-style: solid;
-    font-weight: 900;
+    border: 2px solid black;
     padding: 10px 40px 10px 40px;
     border-color: black; 
   }

@@ -5,7 +5,7 @@
         <p class="text-find">Para finalizar la orden se debe diligenciar la siguiente información</p>
     </div>
     
-    
+    <hr size=1 color="#555555">
     <div class="resumen2">
         <p class="item0">Resumen de tu compra</p> 
         <p class="item1">item 1</p>
@@ -25,21 +25,43 @@
             <p class="subtotal4">$0</p>
             <p class="subtotal5">$12.900</p>
      </div>
+    <hr size=1 color="#555555">
 
-    <section class="entrega">
-        <p class="datos-entrega">Datos para entregar</p>
-        <label class="label1">Nombre</label>
-        <input class="input1" type="text" placeholder="mi nombre" />
-        <label class="label2">Apellido</label>
-        <input class="input2" type="text" placeholder="mis apellidos"/>
-        <label class="label3">Número celular</label>
-        <input class="input3" type="text" placeholder="399 9999999" />
-        <label class="label4">correo</label>
-        <input class="input4" type="text" placeholder="correo@dominio.com"/>
-    </section>
+    <div class="entrega">
+        <div class="conta-wraper">
+            <p class="datos-entrega">Datos para entregar</p>
+        </div>
+        <form (ngSubmit)="onRegister()" #myForm="ngForm" class="entrega">
+            <p>        
+                <label class="field-label1">Nombre</label>
+                <input class="input1" type="text" name="nombre" required id="nombre" [(ngModel)]="register.nombre" placeholder="mi nombre" />    
+            </p>
+            <p>          
+                <label class="field-label2">Apellido</label>
+                <input class="input2" type="text" name="apellido" 
+                required id="apellido" [(ngModel)]="register.apellido" />
+            </p>
+            <p>
+                <label class="field-label3">Número celular</label>
+                <input class="input3" type="text" name="contacto" 
+                required id="contacto" [(ngModel)]="register.contacto" />          
+            </p>       
+            <p>
+                <label class="field-label4">Correo</label>
+            <input class="input4"  type="email" name="email" 
+            required id="email" [(ngModel)]="register.email" />
+            </p>
+            <p>
+                <button [disabled]="myForm.invalid" type="submit" class="send">FINALIZAR</button>
+            </p>
+        </form>
+    </div>
 
+    <hr size=1 color="#555555">
     <section class="recomendation">
-        <p class="r-pay">Tempralmente nestros pagos se realizan con efectivo y/o datafono</p>
-        <p class="r-observation">¿Deseas compartir algún comentario u observación para la entrega?</p>
-        <input class="text-area" type="text-area" />
+        <p class="r-pay">Temporalmente nuestros pagos se realizan con efectivo y/o datafono</p>
+        <p class="r-observation">¿Algún comentario?</p>
+        <p><textarea class="text-area" name="comentario"></textarea></p>
     </section>
+
+    
