@@ -150,6 +150,34 @@
     font-size: 14px;
 }
 
+.entrega > * {
+    padding: 1em;
+}
+
+.entrega form   {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-content: center;
+}
+
+.entrega form label {
+    display: block;
+}
+
+.entrega form p {
+    margin: 0;
+    padding: 1em;
+}
+
+.entrega form .block {
+    grid-column: 1 / 3;
+}
+ 
+ .entrega form button,
+ .entrega form input {
+    width: 100%;
+    padding: .7em; 
+ }
 
 .send {
     display: flex;

@@ -28,30 +28,30 @@
     <hr size=1 color="#555555">
 
     <div class="entrega">
-        <div class="conta-wraper">
-            <p class="datos-entrega">Datos para entregar</p>
-        </div>
+<!--        <div class="conta-wraper">
+            <p>Datos para entregar</p>
+        </div> -->
         <form (ngSubmit)="onRegister()" #myForm="ngForm" class="entrega">
             <p>        
-                <label class="field-label1">Nombre</label>
-                <input class="input1" type="text" name="nombre" required id="nombre" [(ngModel)]="register.nombre" placeholder="mi nombre" />    
+                <label>Nombre</label>
+                <input type="text" name="nombre" required id="nombre" [(ngModel)]="register.nombre" />    
             </p>
             <p>          
-                <label class="field-label2">Apellido</label>
-                <input class="input2" type="text" name="apellido" 
+                <label>Apellido</label>
+                <input type="text" name="apellido" 
                 required id="apellido" [(ngModel)]="register.apellido" />
             </p>
-            <p>
-                <label class="field-label3">Número celular</label>
-                <input class="input3" type="text" name="contacto" 
+            <p class="block">
+                <label>Número celular</label>
+                <input type="text" name="contacto" 
                 required id="contacto" [(ngModel)]="register.contacto" />          
             </p>       
-            <p>
-                <label class="field-label4">Correo</label>
-            <input class="input4"  type="email" name="email" 
+            <p class="block">
+                <label>Correo</label>
+                <input type="email" name="email" 
             required id="email" [(ngModel)]="register.email" />
             </p>
-            <p>
+            <p class="block">
                 <button [disabled]="myForm.invalid" type="submit" class="send">FINALIZAR</button>
             </p>
         </form>
