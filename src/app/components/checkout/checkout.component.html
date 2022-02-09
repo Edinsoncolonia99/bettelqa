@@ -6,31 +6,37 @@
     </div>
     
     <hr size=1 color="#555555">
-    <div class="resumen2">
-        <p class="item0">Resumen de tu compra</p> 
-        <p class="item1">item 1</p>
-        <p class="item2">item 2</p>
-        <p class="item3">item n</p>
-        <p class="quanty1">1</p>
-        <p class="quanty2">1</p>
-        <p class="quanty3">1</p>
-        <p class="value1">$13.600</p>
-        <p class="value2">$13.600</p>
-        <p class="value3">$13.600</p>
+
+    <div class="ordentotal">
+        <p>Resumen de la compra</p>
+        <div class="detalle">
+            <p>Producto</p>
+            <p>Cantidad</p>
+            <p>Valor</p>
+            <p>item 1</p>
+            <p>item 2</p>
+            <p>item 3</p>
+            <p>Cant 1</p>
+            <p>Cant 2</p>
+            <p>Cant 3</p>
+            <p>Valor 1</p>
+            <p>Valor 2</p>
+            <p>Valor 3</p>
+        </div>
+        <div class="encabezado">
+            <p class="title">Valor envio</p>
+            <p class="title">Valor total</p>
+            <p>000</p>
+            <p>$12000</p>
+        </div>
     </div>
-    <div class="total">
-        <p class="total1">Total orden</p>
-            <p class="subtotal2">Valor envío</p>
-            <p class="subtotal3">Valor total</p>
-            <p class="subtotal4">$0</p>
-            <p class="subtotal5">$12.900</p>
-     </div>
+
     <hr size=1 color="#555555">
 
     <div class="entrega">
-<!--        <div class="conta-wraper">
+        <!-- <div class="conta-wraper">
             <p>Datos para entregar</p>
-        </div> -->
+        </div>  -->
         <form (ngSubmit)="onRegister()" #myForm="ngForm" class="entrega">
             <p>        
                 <label>Nombre</label>
