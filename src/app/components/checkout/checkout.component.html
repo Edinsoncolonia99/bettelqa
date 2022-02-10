@@ -1,14 +1,4 @@
-
-    <div class="resumen">
-        <p class="title-ppal">Resumen del pedido</p>
-        <button class="botton-back">Volver</button>
-        <p class="text-find">Para finalizar la orden se debe diligenciar la siguiente información</p>
-    </div>
-    
-    <hr size=1 color="#555555">
-
     <div class="ordentotal">
-        <p>Resumen de la compra</p>
         <div class="detalle">
             <p>Producto</p>
             <p>Cantidad</p>
@@ -47,6 +37,11 @@
                 <input type="text" name="apellido" 
                 required id="apellido" [(ngModel)]="register.apellido" />
             </p>
+            <p class="block">
+                <label>Dirección</label>
+                <input type="text" name="dieccion" 
+                required id="contacto" [(ngModel)]="register.direccion" />          
+            </p>       
             <p class="block">
                 <label>Número celular</label>
                 <input type="text" name="contacto" 

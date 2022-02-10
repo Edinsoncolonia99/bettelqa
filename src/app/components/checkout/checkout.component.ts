@@ -12,6 +12,7 @@ export class CheckoutComponent implements OnInit {
     apellido: '',
     contacto: '',
     email: '',
+    direccion: '',
   }
   constructor() { }
 

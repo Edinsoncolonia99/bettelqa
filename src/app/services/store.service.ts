@@ -38,7 +38,6 @@ export class StoreService {
     },
   ];
 
-
   private myShoppingCart: Product[] = [];
   private myCart = new BehaviorSubject<Product[]>([]);
 
@@ -53,13 +52,14 @@ export class StoreService {
  
   addProduct(product: Product) {
     this.myShoppingCart.push(product);
-    this.myCart.next(this.myShoppingCart);
+    this.myCart.next(this.myShoppingCart); //trasmi el estado de la lista
   }
 
   getShoppingCart() {
     return this.myShoppingCart;
   }
 
+  // total $$ de carro de compras
   getTotal() {
     return this.myShoppingCart.reduce((sum, item) => sum + item.price, 0);
   }

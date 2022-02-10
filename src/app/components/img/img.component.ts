@@ -22,9 +22,9 @@ export class ImgComponent implements OnInit {
     // },1000);
   }
 
-  ngOnDestroy(){
+  // ngOnDestroy(){
     // window.clearInterval(this.counterFn);
-  }
+  // }
 
 
   imgError(){
