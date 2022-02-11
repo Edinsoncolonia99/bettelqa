@@ -33,13 +33,8 @@ export class ProductDetailComponent implements OnInit {
       const id = params.id;
       this.product = this.storeService.getProduct(id)!;
     });  
-
-    this.storeService.myCart$.subscribe(products => {
-    this.counter = products.length;
-    });
-
   }
-
+  
   onAddToCart() {
     this.addedProduct.emit(this.product);
   }

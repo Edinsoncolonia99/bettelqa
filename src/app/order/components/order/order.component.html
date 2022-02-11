@@ -1,0 +1,11 @@
+<p>que oasa</p>
+<ul>
+    <li *ngFor="let product of ( products$ | async )">
+        {{ product.id }}
+        {{ product.name }}
+        {{ product.price }}
+        {{ product.title }}
+    </li>
+        
+    
+</ul>

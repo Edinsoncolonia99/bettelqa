@@ -1,14 +1,22 @@
 // parte del segund ejericio
 
+
+
 .ordentotal > * {
     padding: 2em;
+}
+
+h1 {
+    margin-bottom: 5px;
 }
 
 .detalle {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     place-content: center;
+    margin-top: 5px;
 }
+
 
 .ordentotal p {
     display: block;

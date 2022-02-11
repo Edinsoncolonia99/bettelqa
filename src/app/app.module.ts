@@ -12,9 +12,9 @@ import { ProductDetailComponent } from './components/product-detail/product-deta
 import { ContactanosComponent } from './components/contactanos/contactanos.component';
 import { UbicacionesComponent } from './components/ubicaciones/ubicaciones.component';
 import { NgxWhastappButtonModule } from "ngx-whatsapp-button";
-import { PreordenComponent } from './components/preorden/preorden.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CommonModule } from '@angular/common';
 
 
 @NgModule({
@@ -28,7 +28,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ProductDetailComponent,
     ContactanosComponent,
     UbicacionesComponent,
-    PreordenComponent,
     CheckoutComponent
   ],
   imports: [
@@ -36,7 +35,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     FormsModule,
     NgxWhastappButtonModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

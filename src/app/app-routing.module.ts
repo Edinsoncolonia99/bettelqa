@@ -5,6 +5,7 @@ import { ProductDetailComponent } from './components/product-detail/product-deta
 import { ContactanosComponent } from './components/contactanos/contactanos.component';
 import { UbicacionesComponent } from './components/ubicaciones/ubicaciones.component';
 import {  CheckoutComponent } from './components/checkout/checkout.component';
+import { OrderComponent } from './order/components/order/order.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,10 @@ const routes: Routes = [
   {
     path: 'product/:id',
     component: ProductDetailComponent
+  },
+  {
+    path: 'order',
+    component: OrderComponent
   },
 ];
 
